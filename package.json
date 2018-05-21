@@ -1,0 +1,27 @@
+{
+  "name": "@types/weex",
+  "version": "0.0.1",
+  "publishConfig": {
+    "registry": "http://nexus.oaknt.com:18081/repository/oak_npm_hosted/"
+  },
+  "description": "weex 类型定义",
+  "main": "index.js",
+  "scripts": {
+    "build:web-prod": "webpack --config webpack.prod.config.js --progress --colors"
+  },
+  "keywords": [
+    "weex",
+    "types"
+  ],
+  "types": "./index.d.ts",
+  "author": "wxp",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "@types/node": "^7.0.16"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^3.2.2",
+    "typescript": "^2.4.2",
+    "typings": "^2.1.1"
+  }
+}
