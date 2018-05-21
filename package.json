@@ -1,6 +1,14 @@
 {
   "name": "@types/weex",
   "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fengwuxp/wuxp_weex_types.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fengwuxp/wuxp_weex_types/issues"
+  },
+  "homepage": "https://github.com/fengwuxp/wuxp_weex_types#readme",
   "publishConfig": {
     "registry": "http://nexus.oaknt.com:18081/repository/oak_npm_hosted/"
   },
@@ -14,7 +22,7 @@
     "types"
   ],
   "types": "./index.d.ts",
-  "author": "wxp",
+  "author": "wuxp",
   "license": "BSD-3-Clause",
   "dependencies": {
     "@types/node": "^7.0.16"
