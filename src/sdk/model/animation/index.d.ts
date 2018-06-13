@@ -14,27 +14,29 @@ export interface WeexAnimationModule extends WeexModule {
     readonly transition: (ref: any, options: WeexAnimationOptions, callback?: (result?: any) => void) => void;
 }
 
-export interface WeexTransform {
+// export interface WeexTransform {
+//
+//     //指定元素要移动到的位置	像素值或百分比	无
+//     translate?: number;
+//     translateX?: number,
+//     translateY?: number,
+//
+//     //指定元素将被旋转的角度，单位是度	number	无
+//     rotate?: number,
+//     rotateX?: number,  //v0.14+
+//     rotateY?: number,  //v0.14+
+//
+//     //按比例放大或缩小元素	number	无
+//     scale?: number;
+//     scaleX?: number;
+//     scaleY?: number
+//
+//     // v0.16+	观察者距离z=0平面的距离，在Android 4.1及以上有效	number	正无穷
+//     perspective?: number
+//
+// }
 
-    //指定元素要移动到的位置	像素值或百分比	无
-    translate?: number;
-    translateX?: number,
-    translateY?: number,
-
-    //指定元素将被旋转的角度，单位是度	number	无
-    rotate?: number,
-    rotateX?: number,  //v0.14+
-    rotateY?: number,  //v0.14+
-
-    //按比例放大或缩小元素	number	无
-    scale?: number;
-    scaleX?: number;
-    scaleY?: number
-
-    // v0.16+	观察者距离z=0平面的距离，在Android 4.1及以上有效	number	正无穷
-    perspective?: number
-
-}
+type WeexTransform=string;
 
 
 
