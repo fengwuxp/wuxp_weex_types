@@ -17,25 +17,26 @@ export interface WeexAnimationModule extends WeexModule {
 export interface WeexTransform {
 
     //指定元素要移动到的位置	像素值或百分比	无
-    translate: number;
-    translateX: number,
-    translateY: number,
+    translate?: number;
+    translateX?: number,
+    translateY?: number,
 
     //指定元素将被旋转的角度，单位是度	number	无
-    rotate: number,
-    rotateX: number,  //v0.14+
-    rotateY: number,  //v0.14+
+    rotate?: number,
+    rotateX?: number,  //v0.14+
+    rotateY?: number,  //v0.14+
 
     //按比例放大或缩小元素	number	无
-    scale: number;
-    scaleX: number;
-    scaleY: number
+    scale?: number;
+    scaleX?: number;
+    scaleY?: number
 
     // v0.16+	观察者距离z=0平面的距离，在Android 4.1及以上有效	number	正无穷
-    perspective: number
-
+    perspective?: number
 
 }
+
+
 
 export interface WeexTransitionStyle {
     width?: number;//	动画执行后应用到组件上的宽度值	length	无
@@ -72,8 +73,9 @@ export interface WeexAnimationOptions {
      * 节点动画执行时是否产生布局动画即LayoutAnimation，默认值是false。
      */
     needLayout?: boolean;
+
     /**
      * 指定请求动画操作到执行动画之间的时间间隔 (单位是毫秒)，默认值是 0，表示没有延迟，在请求后立即执行动画。
      */
-    delay: number;
+    delay?: number;
 }
